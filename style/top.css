@@ -261,7 +261,7 @@ body.appear #container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 .intro > p, .process > p, .portfolio > p {
     font-size: 2rem;
@@ -278,7 +278,6 @@ body.appear #container{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 500;
 }
-
 /*==================================================
 スライダーのためのcss
 ===================================*/
@@ -365,11 +364,18 @@ body.appear #container{
     padding: 1rem;
 }
 .process_content > li > video {
+    margin-right: 1.5rem;
     width: 20vw;
     height: auto;
+    box-shadow: 6px 6px #5f5f5fc1;
 }
 .process_content > li > h2 {
     padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Agdasima', sans-serif;
+    color: #fff;
+    background: rgba(81, 158, 81, 0.918);
+    border-radius: 10px;
 }
 .process_content > li > p {
     padding: 1rem;
