@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./style/top.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/top.js" defer></script>
+</head>
+
+<body>
+    <div id="splash">
+        <div class="loading_content" id="splash-logo">
+            <div id="peachImg">
+                <img src="./image/peach.PNG" alt="">
+            </div>
+            <div id="waveImg">
+                <img src="./image/wave.PNG" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="splashbg"></div>
+    <!---画面遷移用-->
+    <div id="container">
+        <header class="header" id="header">
+            <div class="header_content">
+                <div class="header_trans">
+                    <button>JP</button>
+                    <button>EN</button>
+                </div>
+                <div class="openbtn"><span></span><span></span><span></span></div>
+            </div>
+            <div id="video-area">
+                <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+                    <!--
+                poster：動画ファイルが利用できない環境で代替表示される画像
+                webkit-playsinline：iOS 9までのSafari用インライン再生指定
+                playsinline：iOS 10以降のSafari用インライン再生指定
+                muted：音声をミュートさせる
+                autoplay：動画を自動再生させる
+                loop：動画をループさせる
+                controls：コントロールバーを表示する
+                -->
+                    <source src="./video/anton.mp4" type="video/mp4">
+                    <source src="video/movie.ogv" type="video/ogv">
+                    <source src="video/movie.webm" type="video/webm">
+                    <p>動画を再生できる環境ではありません。</p>
+                </video>
+                <!--/video-area-->
+            </div>
+            <h1 class="header_title">DEEDS, NOT WORDS.</h1>
+        </header>
+        <main class="main">
+            <section class="intro">
+                <P>WHO I AM　</P>
+                <div class="intro_img">
+                    <img src="./image/momo.png" alt="">
+                </div>
+                <span id="introMessage1"></span>
+                <span id="introMessage2"></span>
+                <span id="introMessage3"></span>
+                <span id="introMessage4"></span>
+                <span id="introMessage5"></span>
+            </section>
+            <section class="process">
+                <P>MAKING PROCESS</P>
+                <ul class="process_content">
+                    <li id="processContent1">
+                        <video poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+                            <source src="./video/miro_video.mp4" type="video/mp4">
+                        </video>
+                        <h2>step1.</h2>
+                        <p id="processMessage1"></p>
+                    </li>
+                    <li id="processContent2">
+                        <video poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+                            <source src="./video/miro_video.mp4" type="video/mp4">
+                        </video>
+                        <h2>step2.</h2>
+                        <p id="processMessage2"></p>
+                    </li>
+                    <li id="processContent3">
+                        <video poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+                            <source src="./video/miro_video.mp4" type="video/mp4">
+                        </video>
+                        <h2>step3.</h2>
+                        <p id="processMessage3"></p>
+                    </li>
+                </ul>
+            </section>
+            <section class="portfolio">
+                <p>PORTFOLIO</p>
+                <ul class="slider">
+                    <li class="slider_content"><img src="./image/posse.png"
+                            alt=""><span>プログラミングを始めて約半年目のハッカソンにて要件定義から作り上げた<br>サークル新歓サイト。二泊三日という短時間でコンセプトに合ったデザイン作りから<br>企業へのプレゼンテーションまでを行った。</span>
+                    </li>
+                    <li class="slider_content"><img src="./image/posse.png" alt=""></li>
+                    <li class="slider_content"><img src="./image/harrypotter.png" alt=""></li>
+                    <li class="slider_content"><img src="./image/posse.png" alt=""></li>
+                    <li class="slider_content"><img src="./image/posse.png" alt=""></li>
+                    <!--/slider-->
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+        <!--/container-->
+    </div>
+</body>
+
+</html>
