@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
@@ -35,13 +37,21 @@
     <div class="splashbg"></div>
     <!---画面遷移用-->
     <div id="container">
+        <div class="hamburger">
+            <ul>
+                <li><a href="">TOP</a></li>
+                <li><a href="">CANADA</a></li>
+                <li><a href="">RECIPES</a></li>
+                <li><a href="">ARTS</a></li>
+            </ul>
+        </div>
         <header class="header" id="header">
             <div class="header_content">
                 <div class="header_trans">
                     <button>JP</button>
                     <button>EN</button>
                 </div>
-                <div class="openbtn"><span></span><span></span><span></span></div>
+                <div class="openbtn"><span class="openSpan"></span><span class="openSpan"></span><span class="openSpan"></span></div>
             </div>
             <div id="video-area">
                 <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
@@ -65,7 +75,7 @@
         </header>
         <main class="main">
             <section class="intro">
-                <P>WHO I AM　</P>
+                <P class="element">WHO I AM　</P>
                 <p class="intro_img">
                     <img src="./image/momo.png" alt="">
                 </p>
@@ -76,45 +86,56 @@
                 <span id="introMessage5"></span>
             </section>
             <section class="process">
-                <P>MAKING PROCESS</P>
+                <P class="element">MAKING PROCESS</P>
                 <ul class="process_content">
-                    <li id="processContent1">
+                    <a href="https://miro.com/app/board/uXjVM7MNqlY=/?share_link_id=596230712972">
+                    <li class="processHover">
                         <video poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
                             <source src="./video/miro_video.mp4" type="video/mp4">
                         </video>
-                        <h2>step1.</h2>
                         <p id="processMessage1"></p>
                     </li>
-                    <li id="processContent2">
+                    </a>
+                    <a href="https://miro.com/app/board/uXjVM7MNqlY=/?share_link_id=596230712972">
+                    <li class="processHover">
                         <video poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
                             <source src="./video/figma.mp4" type="video/mp4">
                         </video>
-                        <h2>step2.</h2>
                         <p id="processMessage2"></p>
                     </li>
-                    <li id="processContent3">
+                </a>
+                    <a href="https://miro.com/app/board/uXjVM7MNqlY=/?share_link_id=596230712972">
+                    <li class="processHover">
                         <video poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
                             <source src="./video/miro_video.mp4" type="video/mp4">
                         </video>
-                        <h2>step3.</h2>
                         <p id="processMessage3"></p>
                     </li>
+                </a>
                 </ul>
             </section>
             <section class="portfolio">
-                <p>PORTFOLIO</p>
+                <p class="element">PORTFOLIO</p>
                 <ul class="slider">
-                    <li class="slider_content"><img src="./image/posse.png"
-                            alt=""><span id="portfolioMessage1"></span>
+                    <li class="slider_content">
+                        <img src="./image/posse.png"
+                            alt="">
+                            <p id="portfolioMessage1"></p>
+                            <a href="#" class="btnchangeline"><span>実際のサイトを見る</span></a>
                     </li>
-                    <li class="slider_content"><img src="./image/posse.png" alt=""></li>
-                    <li class="slider_content"><img src="./image/harrypotter.png" alt=""></li>
-                    <li class="slider_content"><img src="./image/portfolio.png" alt=""></li>
+                    <li class="slider_content"><img src="./image/posse.png" alt="">   <p id="portfolioMessage2"></p>
+                        <a href="#" class="btnchangeline"><span>実際のサイトを見る</span></a></li>
+                    <li class="slider_content"><img src="./image/harrypotter.png" alt="">   <p id="portfolioMessage3"></p>
+                        <a href="#" class="btnchangeline"><span>実際のサイトを見る</span></a></li>
+                    <li class="slider_content"><img src="./image/portfolio.png" alt="">   <p id="portfolioMessage4"></p>
+                        <a href="#" class="btnchangeline"><span>実際のサイトを見る</span></a></li>
                     <!--/slider-->
                 </ul>
             </section>
         </main>
         <footer class="footer">
+            <h2 >MOMO'S PORTFOLIO</h2>
+            <small>Copyright © CyberAgent, Inc.</small>
         </footer>
         <!--/container-->
     </div>
